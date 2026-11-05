@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    background-color: #101A27;
+    color: #E7EDF3;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #172536;
+    color: #00B4D8;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    width: 95%;
+    margin: 20px auto;
+}
+
+section {
+    background-color: #172536;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #00B4D8;
+}
+
+.instructions {
+    color: #AAB7C4;
+    font-size: 14px;
+}
+
+#raceInfo p:not(.instructions) {
+    background-color: #243447;
+    padding: 10px;
+}
+
+button {
+    background-color: #008EAA;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006D83;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+#leaderBoard {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #526578;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007F99;
+}
+
+td {
+    background-color: #243447;
+}
+
+tbody tr:first-child td {
+    background-color: #166534;
+}
+

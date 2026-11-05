@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1 - Igra</title>
+
+    <link rel="stylesheet" href="F1style.css">
+     <script src="F1script.js"></script>
+</head>
+
+<body onload="showDrivers()">
+
+    <header>
+        <h1>Formula 1</h1>
+        <p>Топ 10 возачи на сите времиња</p>
+    </header>
+
+    <main>
+
+        <section id="raceInfo">
+
+            <h2>Race Info</h2>
+
+            <p class="instructions">
+                Тука можете да го следите тековниот круг на трката
+            </p>
+
+            <p>
+                Lap: <span id="currentLap">0</span> / 10
+            </p>
+
+        </section>
+
+
+        <section id="controls">
+
+            <h2>3 , 2 , 1  Go!</h2>
+
+            <p class="instructions">
+                Start Race ја започнува трката.
+                Next Lap оди на следниот круг
+            </p>
+
+            <button type="button"
+                    id="startButton"
+                    onclick="startRace()">
+                Start Race
+            </button>
+
+            <button type="button"
+                    id="nextLapButton"
+                    onclick="nextLap()"
+                    disabled>
+                Next Lap
+            </button>
+
+        </section>
+
+
+        <section id="leaderBoard">
+
+            <h2>Leader Board</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Driver</th>
+                        <th>Team</th>
+                        <th>Speed</th>
+                        <th>Skill</th>
+                        <th>Tyres</th>
+                        <th>Total Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="rows">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section id="raceEvents">
+
+            <h2>Race updates</h2>
+
+            <ul id="eventList">
+                <li>Race is ready to start.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
